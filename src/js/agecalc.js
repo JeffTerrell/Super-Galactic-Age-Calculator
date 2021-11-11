@@ -11,8 +11,19 @@ export default class GalacticAge {
   mercuryLifeExpectancy() {
     const mercuryExpect = Number((parseFloat(this.userLifeExpectancy/.24) - this.mercury).toFixed(2));
     const mercuryExpectPositive = Math.abs(mercuryExpect);
-    return mercuryExpectPositive;
+    if (this.mercury < this.userLifeExpectancy/.24) {
+      return mercuryExpect;
+    }  
+    else {
+      return mercuryExpectPositive;
+    }
   }
+  
+  // mercuryLifeExpectancy() {
+  //   const mercuryExpect = Number((parseFloat(this.userLifeExpectancy/.24) - this.mercury).toFixed(2));
+  //   const mercuryExpectPositive = Math.abs(mercuryExpect);
+  //   return mercuryExpectPositive;
+  // }
 
   venusLifeExpectancy() {
     const venusExpect = Number((parseFloat(this.userLifeExpectancy/.62) - this.venus).toFixed(2));

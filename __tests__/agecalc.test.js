@@ -3,7 +3,7 @@ import GalacticAge from './../src/js/agecalc.js';
 
 describe('GalacticAge', () => {
 
-  test('should correctly create an object from user age', () => {
+  test('should correctly create an object from user inputted age', () => {
     const age = new GalacticAge(20);
     expect(age.userAge).toEqual(20);
   })
@@ -26,5 +26,10 @@ describe('GalacticAge', () => {
   test('should correctly calculate user inpuuted age on Jupiter', () => {
     const age = new GalacticAge(30);
     expect(age.jupiter).toEqual(2.53);
+  })
+
+  test('should correctly create an object from user inputted age and life expectancy', () => {
+    const agelife = new GalacticAge(30, 75.5)
+    expect(agelife.lifeExpectancy).toEqual(45.5)
   })
 });    

@@ -25,6 +25,6 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate user inpuuted age on Jupiter', () => {
     const age = new GalacticAge(30);
-    expect(age.jupiter).toEqual(2.529510961214165);
+    expect(age.jupiter).toEqual(2.5295109612141653);
   })
 });    

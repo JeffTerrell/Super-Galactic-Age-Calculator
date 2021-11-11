@@ -20,6 +20,6 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate user inputted age on mars', () => {
     const age = new GalacticAge(30);
-    expect(age.mars).toEqual(15.95744680851064)
+    expect(age.mars).toEqual(15.957446808510639)
   })
 });    

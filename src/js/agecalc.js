@@ -27,7 +27,8 @@ export default class GalacticAge {
 
   venusLifeExpectancy() {
     const venusExpect = Number((parseFloat(this.userLifeExpectancy/.62) - this.venus).toFixed(2));
-    return venusExpect;
+    const venusExpectPositive = Math.abs(venusExpect);
+    return venusExpectPositive;  
   }
 
   marsLifeExpectancy() {

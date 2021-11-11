@@ -10,7 +10,8 @@ export default class GalacticAge {
 
   mercuryLifeExpectancy() {
     const mercuryExpect = Number((parseFloat(this.userLifeExpectancy/.24) - this.mercury).toFixed(2));
-    return mercuryExpect;
+    const mercuryExpectPositive = Math.abs(mercuryExpect);
+    return mercuryExpectPositive;
   }
 
   venusLifeExpectancy() {

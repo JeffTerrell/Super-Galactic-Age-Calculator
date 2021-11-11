@@ -7,4 +7,9 @@ export default class GalacticAge {
     this.mars = Number(parseFloat(age/1.88).toFixed(2));
     this.jupiter = Number(parseFloat(age/11.86).toFixed(2));
   }
+
+  mercuryLifeExpectancy() {
+    const mercuryExpect = Number((parseFloat(this.userLifeExpectancy/.24) - this.mercury).toFixed(2));
+    return mercuryExpect;
+  }
 }  

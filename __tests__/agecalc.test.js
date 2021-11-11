@@ -35,6 +35,6 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate life expectancy on mercury based on relative age', () => {
     const ageLife = new GalacticAge(30, 75.5);
-    expect(ageLife.mercuryExpect()).toEqual(189.58)
+    expect(ageLife.mercuryLifeExpectancy()).toEqual(189.58)
   })
 });    

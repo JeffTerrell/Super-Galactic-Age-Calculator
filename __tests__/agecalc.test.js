@@ -1,5 +1,3 @@
-import { exportAllDeclaration } from '@babel/types';
-import { each } from 'jquery';
 import GalacticAge from './../src/js/agecalc.js';
 
 describe('GalacticAge', () => {
@@ -13,7 +11,7 @@ describe('GalacticAge', () => {
   beforeEach(() => {
     ageLife = new GalacticAge(30, 75.5);
   });
-  
+
 
   test('should correctly create an object from user inputted age', () => {
     expect(age.userAge).toEqual(30);

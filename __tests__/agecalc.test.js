@@ -30,6 +30,6 @@ describe('GalacticAge', () => {
 
   test('should correctly create an object from user inputted age and life expectancy', () => {
     const ageLife = new GalacticAge(30, 75.5);
-    expect(ageLife.lifeExpectancy).toEqual(75.5);
+    expect(ageLife.userLifeExpectancy).toEqual(75.5);
   })
 });    

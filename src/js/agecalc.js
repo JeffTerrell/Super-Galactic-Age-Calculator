@@ -22,4 +22,9 @@ export default class GalacticAge {
     const marsExpect = Number((parseFloat(this.userLifeExpectancy/1.88) - this.mars).toFixed(2));
     return marsExpect;
   }
+
+  jupiterLifeExpectancy() {
+    const jupiterExpect = Number((parseFloat(this.userLifeExpectancy/11.86) - this.jupiter).toFixed(2));
+    return jupiterExpect;
+  }
 }  

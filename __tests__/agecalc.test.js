@@ -23,7 +23,7 @@ describe('GalacticAge', () => {
     expect(age.mars).toEqual(15.96)
   })
 
-  test('should correctly calculate user inpuuted age on Jupiter', () => {
+  test('should correctly calculate user inputted age on Jupiter', () => {
     const age = new GalacticAge(30);
     expect(age.jupiter).toEqual(2.53);
   })
@@ -31,5 +31,10 @@ describe('GalacticAge', () => {
   test('should correctly create an object from user inputted age and life expectancy', () => {
     const ageLife = new GalacticAge(30, 75.5);
     expect(ageLife.userLifeExpectancy).toEqual(75.5);
+  })
+
+  test('should correctly calculate life expectancy on mercury based on relative age', () => {
+    const ageLife = new GalacticAge(30, 75.5);
+    expect(ageLife.mercuryExpect()).toEqual(189.58)
   })
 });    

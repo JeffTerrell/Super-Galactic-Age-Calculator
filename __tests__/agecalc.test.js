@@ -12,4 +12,9 @@ describe('GalacticAge', () => {
     const age = new GalacticAge(30);
     expect(age.mercury).toEqual(125);
   })
+
+  test('should correctly calculate user inputted age on Venus', () => {
+    const age = new GalacticAge(30);
+    expect(age.venus).toEqual(48.38709677419355);
+  })
 });    

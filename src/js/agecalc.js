@@ -1,9 +1,9 @@
 export default class GalacticAge {
   constructor(age) {
     this.userAge = age;
-    this.mercury = (age/.24);
-    this.venus = (age/.62);
-    this.mars = (age/1.88);
-    this.jupiter = (age/11.86);
+    this.mercury = Number(parseFloat(age/.24).toFixed(2));
+    this.venus = Number(parseFloat(age/.62).toFixed(2));
+    this.mars = Number(parseFloat(age/1.88).toFixed(2));
+    this.jupiter = Number(parseFloat(age/11.86).toFixed(2));
   }
 }  

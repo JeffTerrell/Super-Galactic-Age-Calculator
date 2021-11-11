@@ -15,16 +15,16 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate user inputted age on Venus', () => {
     const age = new GalacticAge(30);
-    expect(age.venus).toEqual(48.38709677419355);
+    expect(age.venus).toEqual(48.39);
   })
 
   test('should correctly calculate user inputted age on Mars', () => {
     const age = new GalacticAge(30);
-    expect(age.mars).toEqual(15.957446808510639)
+    expect(age.mars).toEqual(15.96)
   })
 
   test('should correctly calculate user inpuuted age on Jupiter', () => {
     const age = new GalacticAge(30);
-    expect(age.jupiter).toEqual(2.5295109612141653);
+    expect(age.jupiter).toEqual(2.53);
   })
 });    

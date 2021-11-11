@@ -42,4 +42,10 @@ describe('GalacticAge', () => {
     const ageLife = new GalacticAge(30, 75.5);
     expect(ageLife.venusLifeExpectancy()).toEqual(73.38)
   })
+
+  test('should correctly calculate life expectancy on Mars based on relative age', () => {
+    const ageLife = new GalacticAge(30, 75.5)
+    expect(ageLife.marsLifeExpectancy()).toEqual(24.20)
+
+  })
 });    

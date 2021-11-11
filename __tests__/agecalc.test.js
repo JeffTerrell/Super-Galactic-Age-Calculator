@@ -40,6 +40,6 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate life expectancy on Venus based on relative age', () => {
     const ageLife = new GalacticAge(30, 75.5);
-    expect(ageLife.venusLifeExpectancy()).toEqual(121.77)
+    expect(ageLife.venusLifeExpectancy()).toEqual(73.38)
   })
 });    

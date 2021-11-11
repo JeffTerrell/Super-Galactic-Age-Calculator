@@ -52,4 +52,9 @@ describe('GalacticAge', () => {
     const ageLife = new GalacticAge(30, 75.5);
     expect(ageLife.jupiterLifeExpectancy()).toEqual(3.84);
   })
+
+  test('should correctly return a positive number if current age is greater than life expectancy', () => {
+    const passLifeExpect = new GalacticAge(85, 75.5);
+    expect(passLifeExpect.mercuryLifeExpectancy()).toEqual(39.59)
+  })
 });    

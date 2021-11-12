@@ -22,7 +22,19 @@ $(document).ready(function() {
     displayVenusMessage();
     displayMarsMessage();
     displayJupiterMessage();
-    
+  
+  //   *** WORK IN PROGRESS ***  
+  //   function displayMessage () {
+  //     $("#mercuryage").html(this.mercury) // use as span on index.html
+  //     $("#mercurylife").html(ageLifeMercury) // use as span on index.html
+  //     if (this.mercury < this.userLifeExpectancy/.24) {
+  //      $("#mercury1").show();
+  //     }
+  //      else {
+  //      $("#mercury2").show();
+  //   }
+  // }
+
     function displayMercuryMessage () {
       if (this.mercury < this.userLifeExpectancy/.24) {
         return $("#mercury1").text("<p>Your age on Mercury is: " + this.mercury + ". You are expected to live another " + ageLifeMercury + " years on Mercury. <p>");
@@ -58,7 +70,5 @@ $(document).ready(function() {
         return $("#jupiter2").text("<p>Your age on Jupiter is: " + this.jupiter + ". Congrats! You have lived " + ageLifeJupiter + " years past average life expectancy on Jupiter </p>");
       }
     }
-
-
-});
+  });
 })

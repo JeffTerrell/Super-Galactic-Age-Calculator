@@ -1,7 +1,7 @@
 export default class GalacticAge {
   constructor(age, lifeExpectancy) {
     this.userAge = age;
-    this.userLifeExpectancy = lifeExpectancy
+    this.userLifeExpectancy = lifeExpectancy;
     this.mercury = Number(parseFloat(age/.24).toFixed(2));
     this.venus = Number(parseFloat(age/.62).toFixed(2));
     this.mars = Number(parseFloat(age/1.88).toFixed(2));
@@ -32,3 +32,11 @@ export default class GalacticAge {
     return jupiterExpectPositive;
   }
 }  
+
+
+// if (this.mercury < this.userLifeExpectancy/.24) {
+//   return mercuryExpect;
+// }  
+// else {
+//   return mercuryExpectPositive;
+// }

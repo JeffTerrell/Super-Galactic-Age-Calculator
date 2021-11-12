@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title></title>
+  <title>Super Galactic Age Calculator</title>
 </head>
 <body>
-
+  <div class="container">
+    <h1>Super Galactic Age Calculator</h1>
+    <div id="earth">
+      <form id="agelifeform">
+        <div id="earthage">
+          <label for="age">Enter Your Earth Age</label>
+          <input type="number" id="age" name="tentacle" min="1" max="150"> 
+        </div>
+        <div id="earthlife">
+          <label for="life-expect">Life Expectancy</label>
+          <select id="life-expect" class="form-control">
+            <option value="select">Select an option...</option>
+            <option value="75.1">Male</option>
+            <option value="80.5">Female</option>
+          </select>  
+        </div>
+        <button type="submit" class="btn btn-primary">Submit!</button>    
+      </form>  
+    </div>  
+    <div id="mercury1">
+      <h1>Mercury</h1>
+      <h2 id="mercury1-1"></h2>
+    </div>  
+    <div id="mercury2">
+      <h1>Mercury</h1>
+      <h2 id="mercury2-2"></h2>
+    </div>
+    <div id="venus">
+      <h1>Venus</h1>
+    </div>
+    <div id="mars">
+      <h1>Mars</h1>
+    </div>
+    <div id="jupiter">
+      <h1>Jupiter</h1>
+    </div>              
+  </div>  
 </body>
 </html>

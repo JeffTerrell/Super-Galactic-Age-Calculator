@@ -11,19 +11,8 @@ export default class GalacticAge {
   mercuryLifeExpectancy() {
     const mercuryExpect = Number((parseFloat(this.userLifeExpectancy/.24) - this.mercury).toFixed(2));
     const mercuryExpectPositive = Math.abs(mercuryExpect);
-    if (this.mercury < this.userLifeExpectancy/.24) {
-      return mercuryExpect;
-    }  
-    else {
-      return mercuryExpectPositive;
-    }
+    return mercuryExpectPositive;
   }
-  
-  // mercuryLifeExpectancy() {
-  //   const mercuryExpect = Number((parseFloat(this.userLifeExpectancy/.24) - this.mercury).toFixed(2));
-  //   const mercuryExpectPositive = Math.abs(mercuryExpect);
-  //   return mercuryExpectPositive;
-  // }
 
   venusLifeExpectancy() {
     const venusExpect = Number((parseFloat(this.userLifeExpectancy/.62) - this.venus).toFixed(2));
@@ -33,11 +22,13 @@ export default class GalacticAge {
 
   marsLifeExpectancy() {
     const marsExpect = Number((parseFloat(this.userLifeExpectancy/1.88) - this.mars).toFixed(2));
-    return marsExpect;
+    const marsExpectPositive = Math.abs(marsExpect);
+    return marsExpectPositive;
   }
 
   jupiterLifeExpectancy() {
     const jupiterExpect = Number((parseFloat(this.userLifeExpectancy/11.86) - this.jupiter).toFixed(2));
-    return jupiterExpect;
+    const jupiterExpectPositive = Math.abs(jupiterExpect);
+    return jupiterExpectPositive;
   }
 }  

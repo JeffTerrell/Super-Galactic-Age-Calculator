@@ -17,14 +17,48 @@ $(document).ready(function() {
     const ageLifeVenus = ageLife.venusLifeExpectancy();
     const ageLifeMars = ageLife.marsLifeExpectancy();
     const ageLifeJupiter = ageLife.jupiterLifeExpectancy();
+
+    displayMercuryMessage();
+    displayVenusMessage();
+    displayMarsMessage();
+    displayJupiterMessage();
     
-    function displayLifeExpectMessage () {
+    function displayMercuryMessage () {
       if (this.mercury < this.userLifeExpectancy/.24) {
-        return $("#mercury1").text("<p> You are expected to live another " + mercuryExpectPositive + " years on Mercury <p>");
+        return $("#mercury1").text("<p>Your age on Mercury is: " + this.mercury + ". You are expected to live another " + ageLifeMercury + " years on Mercury. <p>");
       }  
       else {
-        return $(mercuryExpectPositive;
+        return $("#mercury2").text("<p>Your age on Mercury is: " + this.mercury + ". Congrats! You have lived " + ageLifeMercury + " years past average life expectancy on Mercury. </p>");
       }
     }
+
+    function displayVenusMessage () {
+      if (this.venus < this.userLifeExpectancy/.62) {
+        return $("#venus1").text("<p>Your age on Venus is: " + this.venus + ". You are expected to live another " + ageLifeVenus + " years on Venus. <p>");
+      }  
+      else {
+        return $("#venus2").text("<p>Your age on Venus is: " + this.venus + ". Congrats! You have lived " + ageLifeVenus + " years past average life expectancy on Venus. </p>");
+      }
+    }
+
+    function displayMarsMessage () {
+      if (this.mars < this.userLifeExpectancy/1.88) {
+        return $("#mars1").text("<p>Your age on Mars is: " + this.mars + ". You are expected to live another " + ageLifeMars + " years on Mars. <p>");
+      }  
+      else {
+        return $("#mars2").text("<p>Your age on Mars is: " + this.mars + ". Congrats! You have lived " + ageLifeMars + " years past average life expectancy on Mars. </p>");
+      }
+    }
+
+    function displayJupiterMessage () {
+      if (this.jupiter < this.userLifeExpectancy/11.86) {
+        return $("#jupiter1").text("<p>Your age on Jupiter is: " + this.jupiter + ". You are expected to live another " + ageLifeJupiter + " years on Jupiter <p>");
+      }  
+      else {
+        return $("#jupiter2").text("<p>Your age on Jupiter is: " + this.jupiter + ". Congrats! You have lived " + ageLifeJupiter + " years past average life expectancy on Jupiter </p>");
+      }
+    }
+
+
 });
 })

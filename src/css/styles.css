@@ -5,10 +5,39 @@
 #mercury2 {
   display: none;
 }
-/* #mercury1 {
+
+#venus1 {
   display: none;
 }
 
-#mercury2 {
+#venus2 {
   display: none;
-} */
+}
+
+#mars1 {
+  display: none;
+}
+
+#mars2 {
+  display: none;
+}
+
+#jupiter1 {
+  display: none;
+}
+
+#jupiter2 {
+  display: none;
+}
+
+#errorage {
+  display: none;
+}
+
+#errorlife {
+  display: none;
+}
+
+#erroragelife {
+  display: none;
+}

@@ -31,12 +31,4 @@ export default class GalacticAge {
     const jupiterExpectPositive = Math.abs(jupiterExpect);
     return jupiterExpectPositive;
   }
-}  
-
-
-// if (this.mercury < this.userLifeExpectancy/.24) {
-//   return mercuryExpect;
-// }  
-// else {
-//   return mercuryExpectPositive;
-// }
+}
